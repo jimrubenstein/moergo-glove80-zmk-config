@@ -378,9 +378,9 @@
         };
 
         layer_mod: layer_mod {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LGUI &mo 4>;
             label = "LAYER_MOD";
         };
     };
@@ -398,12 +398,12 @@
             // | MAGIC | HOME| END | LEFT | RIGHT|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
             bindings = <
-&kp ESCAPE        &kp F2                      &kp F3                   &kp F4                      &kp F5                                                                                                              &kp F6            &kp F7                        &kp F8                            &kp F9                                &kp F10
-&kp GRAVE         &kp N1                      &kp N2                   &kp N3                      &kp N4                 &kp N5                                                                               &kp N6  &kp N7            &kp N8                        &kp N9                            &kp N0                                &kp MINUS
-&kp TAB           &kp Q                       &kp W                    &kp E                       &kp R                  &kp T                                                                                &kp Y   &kp U             &kp I                         &kp O                             &kp P                                 &kp BSLH
-&kp LEFT_CONTROL  &leftHand_hr_mt LEFT_ALT A  &leftHand_hr_mt LCTRL S  &leftHand_hr_mt LEFT_GUI D  &kp F                  &kp G                                                                                &kp H   &kp H             &rightHand_hr_mt RIGHT_GUI K  &rightHand_hr_mt RIGHT_CONTROL L  &rightHand_hr_mt RIGHT_ALT SEMICOLON  &kp SQT
-&kp LEFT_SHIFT    &kp Z                       &kp X                    &kp C                       &kp V                  &kp B   &layer_mod LG(NUMBER_4)  &mo 5       &mo 4     &kp LGUI  &mo 5    &kp RSHFT  &kp N   &kp M             &kp COMMA                     &kp DOT                           &kp FSLH                              &kp RIGHT_SHIFT
-&magic 2 0        &kp LALT                    &php_open_close          &kp LEFT_PARENTHESIS        &kp RIGHT_PARENTHESIS          &kp BACKSPACE            &kp LSHIFT  &kp LALT  &kp RALT  &kp RET  &kp SPACE          &kp LEFT_BRACKET  &kp RIGHT_BRACKET             &morph_sing_dbl_arrow             &none                                 &none
+&kp ESCAPE        &kp F2                      &kp F3                   &kp F4                      &kp F5                                                                                                    &kp F6            &kp F7                        &kp F8                            &kp F9                                &kp F10
+&kp GRAVE         &kp N1                      &kp N2                   &kp N3                      &kp N4                 &kp N5                                                                     &kp N6  &kp N7            &kp N8                        &kp N9                            &kp N0                                &kp MINUS
+&kp TAB           &kp Q                       &kp W                    &kp E                       &kp R                  &kp T                                                                      &kp Y   &kp U             &kp I                         &kp O                             &kp P                                 &kp BSLH
+&kp LEFT_CONTROL  &leftHand_hr_mt LEFT_ALT A  &leftHand_hr_mt LCTRL S  &leftHand_hr_mt LEFT_GUI D  &kp F                  &kp G                                                                      &kp H   &kp H             &rightHand_hr_mt RIGHT_GUI K  &rightHand_hr_mt RIGHT_CONTROL L  &rightHand_hr_mt RIGHT_ALT SEMICOLON  &kp SQT
+&kp LEFT_SHIFT    &kp Z                       &kp X                    &kp C                       &kp V                  &kp B   &layer_mod 4   &mo 5       &mo 4     &kp LGUI  &mo 5    &kp RSHFT  &kp N   &kp M             &kp COMMA                     &kp DOT                           &kp FSLH                              &kp RIGHT_SHIFT
+&magic 2 0        &kp LALT                    &php_open_close          &kp LEFT_PARENTHESIS        &kp RIGHT_PARENTHESIS          &kp BACKSPACE  &kp LSHIFT  &kp LALT  &kp RALT  &kp RET  &kp SPACE          &kp LEFT_BRACKET  &kp RIGHT_BRACKET             &morph_sing_dbl_arrow             &none                                 &none
             >;
         };
 
